@@ -1,0 +1,130 @@
+@use'variables'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Red Hat Display', sans-serif
+    font-size: 16px
+
+body
+    background: variables.$pale-blue
+    background-image: variables.$bg-img
+    background-repeat: no-repeat
+    width: 100%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center     
+    padding: 1rem
+    color: variables.$dark-blue
+ 
+main
+    background: variables.$bg-container
+    max-width: 420px 
+    border-radius: 1rem
+
+main section
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    padding: 0 2rem
+    height: 100%
+    width: 100%
+
+
+main section h1
+    margin-top: 2rem
+    margin-bottom: 1rem
+    color: variables.$dark-blue
+    font-weight: 900
+    font-size: 1.7rem
+    
+
+main section span
+    color: variables.$desaturated-blue
+    text-align: center
+    font-weight: 500
+          
+main img
+    width: 100%
+    border-radius: 1rem 1rem 0 0
+
+main div.informations
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    background-color: variables.$very-pale-blue
+    border-radius:1rem
+    padding: 1.5rem 1rem
+    margin-top: 2rem
+    margin-bottom: 2rem
+    font-weight: 700
+
+main .informations .music-price
+    display: flex
+    align-items: center    
+
+main .informations .price
+    display: flex  
+    flex-direction: column
+
+main .informations img
+    width: 48px
+    margin-right: 1rem
+    
+main .informations a
+    color: variables.$bright-blue
+    font-weight: 600
+    font-size: 90%
+    transform: all 0.5s
+       
+main .informations a:hover
+    color: variables.$dark-blue
+    text-decoration: none
+
+main button
+    cursor: pointer
+    background: variables.$bright-blue
+    color: #fff
+    font-weight: 600
+    border: none
+    width: 100%
+    padding: 1rem 0
+    border-radius: 0.8rem
+    margin-bottom: 1.5rem
+    box-shadow: 8px 20px 20px rgba(56, 42, 225, 0.2)
+    transition: background 0.3s
+
+main button:hover
+
+    background: #766CF1
+
+#cancel-order
+    text-decoration: none
+    color: variables.$desaturated-blue
+    font-weight: 600
+    font-size: 0.9rem
+    margin-bottom: 2rem
+    transition: color 0.3s
+#cancel-order:hover
+    color: variables.$dark-blue
+
+
+@media ( max-width: 375px )
+    main section span
+        font-size: 17px
+
+    main button
+        font-size: 17px
+
+    #cancel-order
+        font-size: 17px
+
+    main .informations a
+        font-size: 15px
+
+    main .informations .price
+        font-size: 10   px
